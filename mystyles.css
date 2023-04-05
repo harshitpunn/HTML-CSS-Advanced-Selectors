@@ -1,0 +1,192 @@
+/* NOTES 
+List of HTML Entity Symbols for Use in List Task
+https://www.toptal.com/designers/htmlarrows/symbols/
+ */
+
+/* URLS for ADVANCED SELECTORS CHEATSHEETS::after
+ https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+ 
+For final task (List Styling)
+
+ https://www.lambdatest.com/blog/css-selectors-cheat-sheet/
+ */
+
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+header>h1 {
+  font-size: 3.157rem;
+  color: #788880;
+}
+
+article>h1 {
+  font-size: 2.369rem;
+}
+
+header>h1>span {
+  color: #c46d3b;
+}
+
+h2 {
+  border-bottom: 1px solid #000000;
+}
+
+h3 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+nav>ul>li:not(:last-child) {
+  border-right: solid 1px #c46d3b;
+}
+
+article>p:first-of-type::first-line {
+  font-weight: bold;
+}
+
+article>p:first-of-type:first-letter {
+  float: left;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 3rem;
+  line-height: 1.6;
+  margin-right: 0.3rem;
+  padding: 0px 9px;
+}
+
+h2+p {
+  font-style: italic;
+  font-size: 1.777rem;
+  line-height: 1.25;
+}
+
+footer>nav>ul>li>a[href*="companies"] {
+  color: lemonchiffon;
+}
+
+footer>nav>ul>li>a[href*="originators"] {
+  color: deepskyblue;
+}
+
+footer>nav>ul>li>a[href*="contemporary"] {
+  color: firebrick;
+}
+
+input[type="search"]:focus {
+  width: 10rem;
+  height: 1.5rem;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+}
+
+nav>ul>li>a::before {
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-size: 1rem;
+  display: block;
+  font-weight: 900;
+  color: white;
+}
+
+nav>ul>li>a[href="home.html"]::before {
+  content: "\f015";
+  ;
+}
+
+nav>ul>li>a[href="music.html"]::before {
+  content: "\f001";
+  ;
+}
+
+nav>ul>li>a[href="video.html"]::before {
+  content: "\f03d";
+  ;
+}
+
+nav>ul>li>a[href="contact.html"]::before {
+  content: "\f03d";
+  ;
+}
+
+header>nav>ul>li>a {
+  color: #ffffff;
+}
+
+header>nav>ul>li>a:hover {
+  color: #c46d3b;
+}
+
+.floatleft, .floatright {
+  margin:auto;
+  display: block;
+  float: none;
+}
+
+.recordings {
+  list-style-type: none;
+}
+
+.recordings>li {
+  font-style: italic;
+}
+
+ul.recordings>li::before {
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #c46d3b;
+  content: "\f004";
+  margin-right: 3px;
+}
+
+ul.recordings>li:nth-child(2n)::before {
+  color: orange;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  img[alt~="album"] {
+    display: block;
+    margin:auto;
+    float: none;
+    margin-bottom:10px;
+  }
+}
+
+
+@media screen and (min-width: 425px) {
+  .floatright {
+    float: right;
+    margin: 0 0 5px 5px;
+  }
+  .floatleft {
+    float: left;
+    margin: 0 5px 5px 0;
+  }
+  h3+img.floatleft{
+    float: none !important;
+    margin:auto !important;
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  h3+img.floatleft{
+    float: right !important;
+    margin: 0 0 5px 5px;
+  }
+}
